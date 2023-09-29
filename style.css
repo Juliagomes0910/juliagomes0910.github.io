@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    background-color: #fffc35e5;
+}
+
+nav {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ajustando a imagem da navbar */
+img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+#img {
+    margin-left: 200px;
+    width: 150px;
+}
+
+/* ajustando os links da navbar */
+#links {
+    margin-right: 100px;
+}
+
+.custom-li a{
+    color: #F67B38;
+    font-weight: bold;
+    padding: 20px 60px 20px 60px;
+}
+
+/* adicionando animação aos links */
+.custom-li a:hover {
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.custom-li {
+    background-color: #f0f8ff;
+    transition: all 500ms;
+}
+
+.custom-li:hover{
+    background-color: #ae59f3;
+}
+
+/* adicionando border-radius especifico para cada link */
+.custom-li:nth-child(1){
+    border-radius: 15px 0 0 15px;
+}
+
+.custom-li:nth-child(2){
+    border-radius: 0;
+}
+
+.custom-li:nth-child(3){
+    border-radius: 0 15px 15px 0;
+}
+
+
+/* ajustando carrosel de imagens */
+#fotos-carousel img {
+    width: 350px;
+    margin: 50px;
+}
+
+/* adicionando "zoom" ao passar o mouse por cima */
+.box img:hover {
+    transform: scale(1.1);
+    transition: all 500ms;
+}
+
+/* adicionando borda às imagens */
+.box img{
+   border-radius: 100%;
+   border: 15px solid;
+   transition: transform 500ms;
+   width: 150px;
+}
+
+/* alterando cor de cada borda pela sua posiçao */
+.box .custom-border-1 {
+    border-color: #9DD509;
+}
+
+.box .custom-border-2 {
+    border-color: #47C0D8;
+}
+
+.box .custom-border-3 {
+    border-color: #573896;
+}
+
+/* adicionando linha divisória na página */
+#linha {
+    display: flex;
+    height: 60px;
+    background-color: #ef2b32b0;
+    align-items: center;
+    justify-content: center;
+}
+
+#linha h6 {
+    font-style: italic;
+    color: #fff;
+}
+
+/* ajustando titulo biografia */
+#titulo-biografia {
+    background-color: #573896;
+    width: 500px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    color: #f0f8ff;
+}
+
+h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nome a {
+    text-decoration: none;
+    color: #9e3fec;
+}
+
+/* esilizando imagem da biografia */
+#imagem-biografia {
+    margin-top: 80px;
+}
+
+.biografia {
+    width: 400px;
+    margin-right: 150px;
+}
+
+#imagem-biografia img {
+    width: 350px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+/* animação para alterar a cor da borda */
+.box .custom-border-4 {
+    border-color: #573896;
+}
+
+@keyframes borderColorChange {
+    0% {
+      border-color: #573896;
+    }
+    25% {
+      border-color: #47C0D8; /* Vermelho */
+    }
+    50% {
+      border-color: #177414; /* Verde */
+    }
+    75% {
+      border-color: #125286b0; /* Azul */
+    }
+    100% {
+      border-color: #573896; /* De volta à cor original */
+    }
+}
+  
+  /* Aplique a animação à classe desejada */
+.box .custom-border-4:hover {
+    transition: all 700ms;
+    animation: borderColorChange 7s linear infinite; /* Altera a cor da borda a cada 5 segundos (ajuste conforme necessário) */
+}
+
+/* estilizando caixa de texto da parte de biografia */
+#container-bio {
+    box-shadow: 2px 2px 50px 0px #a442e6b2;
+    background-color: #573896;
+    width: 500px;
+    height: 100%;
+    border-radius: 15px;
+    margin-right: 150px;
+}
+
+.bio {
+    color: white;
+    font-weight: bold;
+    font-family: 'Kumbh Sans',sans-serif;
+    text-align: justify
+    ;
+    font-size: 17px;
+    width: 490px;
+    margin-right: 250px;
+    padding: 20px;
+}
+
+/* adicionando linha divisória na página */
+#linha2 {
+    display: flex;
+    height: 60px;
+    background-color: #ef2b32b0;
+    align-items: center;
+    justify-content: center;
+}
+
+#linha2 h6 {
+    font-style: italic;
+    color: #fff;
+}
+
+/* estilizando parte de Obras */
+#titulo-obras {
+    background-color: #47c0d8ef;
+    width: 500px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    color: #f0f8ff;
+}
+
+/* estilizando imagens das obras */
+.box2 {
+    margin-top: 25px;
+}
+
+.box2 img{
+    width: 250px;
+    border-radius: 15px;
+    border: 10px solid;
+}
+
+/* cores das bordas das primeiras 3 imagens */
+.box2 .classic-border1 {
+    border-color: #969311;
+}
+.box2 .classic-border2 {
+    border-color: #803408;
+}
+.box2 .classic-border3 {
+    border-color: #790505ee;
+}
+
+/* cores das bordas das ultimas 3 imagens */
+.box2 .other-border1 {
+    border-color: #0c686e;
+}
+.box2 .other-border2 {
+    border-color: #670574;
+}
+.box2 .other-border3 {
+    border-color: #446b06ee;
+}
+
+/* adicionando linha divisória na página */
+#linha3 {
+    display: flex;
+    height: 60px;
+    background-color: #ef2b32b0;
+    align-items: center;
+    justify-content: center;
+}
+
+#linha3 h6 {
+    font-style: italic;
+    color: #fff;
+}
+
+/* estilando parte do Blog */
+
+#titulo-blog {
+    background-color: #9DD509;
+    width: 500px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    color: #f0f8ff;
+}
+
+#imagem-blog{
+    margin-top: 80px;
+}
+
+#imagem-blog img {
+    width: 350px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+}
+
+
+.blog {
+    font-family: 'Kumbh Sans',sans-serif;
+    text-align: justify;
+    font-size: 17px;
+    width: 500px;
+    margin-right: 250px;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+#container-blog {
+    box-shadow: 2px 2px 50px 0px #9DD509;
+    background-color: #9DD509;
+    width: 500px;
+    height: 100%;
+    border-radius: 15px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+  
+/* Aplicando animação de mudança de cor na borda da imagem*/
+.box .custom-border-5 {
+    border-color: #9DD509;
+}
+
+/* animação para alterar a cor da borda */
+@keyframes borderColorChange2 {
+    0% {
+      border-color: #9DD509;
+    }
+    25% {
+      border-color: #2bb0d1; /* Vermelho */
+    }
+    50% {
+      border-color: #177414; /* Verde */
+    }
+    75% {
+      border-color: #2bb0d1; /* Azul */
+    }
+    100% {
+      border-color: #9DD509; /* De volta à cor original */
+    }
+}
+
+.box .custom-border-5:hover {
+    transition: all 700ms;
+    animation: borderColorChange2 7s linear infinite; 
+}
+
+/* adicionando linha divisória na página */
+#linha4 {
+    height: 140px;
+    background-color: #fffc35e5;
+}
+
+/* esilizando footer */
+.copyryght {
+    color: #940e0eee;
+    font-weight: bold;
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinha os elementos na parte inferior */
+    height: 100%; /* Certifica-se de que a div ocupa toda a altura do contêiner */
+}
+
+.copyryght h4{
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyryght p {
+    font-size: 0.9rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+p a {
+    text-decoration: none;
+    color: #940e0eee;
+}
+
+i {
+    margin-right: 5px;
+}

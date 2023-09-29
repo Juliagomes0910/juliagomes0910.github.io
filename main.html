@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Pedro Bandeira</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"
+</head>
+
+<body>
+    <!-- barra de navegação com bootstrap-->
+    <div id="container" class="container-fluid">
+        <header class="d-flex flex-wrap justify-content-center py-2 border-box"> <!-- py-2 = padding de 2 unidades= 16px-->
+            <a id="img" class="d-flex align-items-center me-md-auto  text-decoration-none"> <!--mb-md-2 adiciona margin bottom de 2 unidades (16px) a um elemento, apenas no breakpoint medium-->
+                <img src="/img/PEDRO (1).png" alt="" >
+            </a>
+            <nav>
+                <ul id="links" class="nav nav-pills align-items-center ">
+                    <li class="nav-item custom-li">
+                        <a href="#Biografia" class="nav-link" aria-current="page">Biografia</a>
+                    </li>
+                    <li class="nav-item custom-li">
+                        <a href="#Obras" class="nav-link" aria-current="page">Obras</a>
+                    </li>
+                    <li class="nav-item custom-li">
+                        <a href="#Blog" class="nav-link" aria-current="page">Blog</a>
+                    </li> 
+                </ul>
+            </nav>
+            
+        </header>
+    </div>
+
+    <!-- adicionando função de carrosel de imagens com bootstrap -->
+    <section id="fotos-carousel">
+        <div class="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000"> <!--cria um carrosel de imagens com 6000ms (6s) de transition-->
+            <div class="carousel-inner">
+                <!-- Primeiro slide com as três primeiras imagens -->
+                <div class="carousel-item active">
+                    <div class="d-flex flex-row justify-content-around">
+                        <article class="box">
+                            <figure>
+                                <img class="custom-border-1" src="/img/pedroBandeira1.png" alt="">
+                            </figure>
+                        </article>
+                        <article class="box">
+                            <figure>
+                                <img class="custom-border-2" src="/img/pedroBandeira2.png" alt="">
+                            </figure>
+                        </article>
+                        <article class="box">
+                            <figure>
+                                <img class="custom-border-3" src="/img/pedroBandeira3.png" alt="">
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+                <!-- Segundo slide com as três imagens seguintes -->
+                <div class="carousel-item">
+                    <div class="d-flex flex-row justify-content-around">
+                        <article class="box">
+                            <figure>
+                                <img class="custom-border-1" src="/img/pedroBandeira4.png" alt="">
+                            </figure>
+                        </article>
+                        <article class="box">
+                            <figure>
+                                <img class="custom-border-2" src="/img/pedroBandeira5.png" alt="">
+                            </figure>
+                        </article>
+                        <article class="box">
+                            <figure>
+                                <img class="custom-border-3" src="/img/pedroBandeira6.png" alt="">
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- adiciona linha divisória de seções -->
+    <div id="linha"><h6>“O futuro só tem valor se nele podermos garantir a perpetuação do passado.”</h6></div>
+
+    <!-- criando seção de Biografia -->
+    <section id="Biografia">
+        <div id="titulo-biografia" class="d-flex align-items-center justify-content-center mx-auto">
+            <h2>Biografia</h2>
+        </div>
+
+        <div id="nome">
+            <h5>
+                <a href="">Pedro Bandeira de Luna Filho</a>
+            </h5>
+        </div>
+
+
+        <div id="imagem-biografia" class="d-flex align-items justify-content-around">
+            <article class="box">
+                <figure>
+                    <img id="foto-biografia" class="custom-border-4" src="/img/pedroBandeira1.png" alt="">
+                </figure>
+            </article>
+
+            <p></p>
+            <p></p>
+            <p></p>
+            
+            <div id="container-bio">
+                <p class="bio">
+                    Nascido em Santos, litoral de São Paulo, Pedro Bandeira mudou-se para a capital em 1961 
+                    para estudar Publicidade na Universidade de São Paulo, trabalhou como ator, diretor , cenógrafo, como jornalista e freelancer. 
+                    Pedro Bandeira obteve enorme sucesso já com a publicação de seu primeiro livro, a publicação infantil “O dinossauro que fazia au-au”. 
+                    Mas o reconhecimento e os altos números de venda vieram mesmo com o segundo, o direcionado a adolescentes, “A droga da obediência”, que vendeu mais de um milhão e meio de exemplares
+                    A partir de 1983, o autor passou a se dedicar inteiramente à literatura, complementando a sua série de livros.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="linha2"><h6>“Amores sempre vêm e vão, mas nunca vêm em vão.”</h6></div>
+
+    <section id="Obras">
+        <div id="titulo-obras" class="d-flex align-items-center justify-content-center mx-auto">
+            <h2 class="obras">Obras</h2>
+        </div>
+        <div id="imagens">
+            <div class="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
+                <div class="carousel-inner">
+                    <!-- Primeiro slide com as três primeiras imagens -->
+                    <div class="carousel-item active">
+                        <div class="d-flex flex-row justify-content-around">
+                            <article class="box2">
+                                <figure>
+                                    <img class="classic-border1" src="/img/aDrogaDaAmizade.jpg" alt="">
+                                </figure>
+                            </article>
+                            <article class="box2">
+                                <figure>
+                                    <img class="classic-border2" src="/img/aDrogaDaObediencia.jpg" alt="">
+                                </figure>
+                            </article>
+                            <article class="box2">
+                                <figure>
+                                    <img class="classic-border3" src="/img/aDrogaDoAmor.jpg" alt="">
+                                </figure>
+                            </article>
+                        </div>
+                    </div>
+                    <!-- Segundo slide com as três imagens seguintes -->
+                    <div class="carousel-item">
+                        <div class="d-flex flex-row justify-content-around">
+                            <article class="box2">
+                                <figure>
+                                    <img class="other-border1" src="/img/aDrogaDeAmericana.jpg" alt="">
+                                </figure>
+                            </article>
+                            <article class="box2">
+                                <figure>
+                                    <img class="other-border2" src="/img/anjoDaMorte.jpg" alt="">
+                                </figure>
+                            </article>
+                            <article class="box2">
+                                <figure>
+                                    <img class="other-border3" src="/img/pantano.jpg" alt="">
+                                </figure>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="linha3"><h6>“Se um romance não é bom, eu posso deixar de lê-lo. Mas e a vida? Como deixar de vivê-la?”</h6></div>
+
+    <section id="Blog">
+        <div id="titulo-blog" class="d-flex align-items-center justify-content-center mx-auto">
+            <h2 class="titulo-blog">
+                Blog
+            </h2>
+        </div>
+
+        <div id="imagem-blog" class="d-flex align-items justify-content-around">
+
+            <div id="container-blog">
+                <p class="blog">
+                    Pedro Bandeira é um dos autores mais populares da literatura infanto-juvenil brasileira. 
+                    Seus livros são conhecidos por sua linguagem acessível e envolvente, que desperta a imaginação e a curiosidade dos leitores. 
+                    Suas histórias também abordam temas importantes, como amizade, coragem, justiça e superação. 
+                    Bandeira é um autor premiado, tendo recebido diversos prêmios, como o Jabuti, o APCA e o Adolfo Aizen. 
+                    Ele também é um grande defensor da leitura e da literatura infantil e juvenil.
+                    Bandeira é um autor que sabe como falar com os jovens. 
+                    Suas histórias são envolventes e divertidas, mas também trazem mensagens importantes sobre a vida.
+                    Os livros de Pedro Bandeira são essenciais para a formação de leitores críticos e reflexivos. 
+                    Eles ajudam as crianças e os jovens a compreender o mundo ao seu redor e a desenvolver seu senso de justiça e solidariedade.
+                </p>
+            </div>
+     
+            <p></p>
+            <p></p>
+            <p></p>
+
+            <article class="box">
+                <figure>
+                    <img id="foto-blog" class="custom-border-5" src="/img/pedroBandeira2.png" alt="">
+                </figure>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div id="linha4" class="container-fluid">
+            <div class="copyryght">
+                <h4>₢ Copyright 2023 - Todos os direitos reservados.</h4>
+                <p>
+                    <i class="fa-brands fa-github"></i><a href="https://github.com/Juliagomes0910">Feito por Julia Gomes</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/5fde4f44d0.js" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
